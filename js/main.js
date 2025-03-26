@@ -65,13 +65,14 @@ function mostrarAbajo() {
 
 const agregarForm = document.querySelector("#agregar-form");
 const agregarInput = document.querySelector("#agregar-input");
-const lista = document.querySelector("#lista")
+const lista = document.querySelector("#agregar")
 agregarForm.addEventListener("submit", agregarLista);
 
 function agregarLista(e) {
     e.preventDefault();
     if(agregarInput.value != ""){
-        let li = document.createElement("li")   
+        let li = document.createElement("li") 
+        li.id="listaAgregada"
         li.innerText = agregarInput.value
         lista.append(li)
     }

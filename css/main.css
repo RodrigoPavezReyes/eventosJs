@@ -8,3 +8,102 @@ body.dark-mode{
     background-color: black;
     color: white;
 }
+
+#abajo{
+    color:rgb(38, 34, 91)}
+
+#listaAgregada {
+    color:rgb(38, 34, 91)
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Título */
+h2 {
+    color: #444;
+}
+
+/* Botones */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.btn:hover {
+    background: #2980b9;
+}
+
+/* Formularios */
+
+.lista {
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Inputs y botones de formulario */
+.form-input {
+    width: calc(100% - 22px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-submit {
+    margin-top: 10px;
+    width: 100%;
+    background: #2ecc71;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.form-submit:hover {
+    background: #27ae60;
+}
+
+/* Lista de elementos */
+.agregar {
+    text-align: left;
+    padding: 10px;
+}
+
+.agregar li {
+    list-style: none;
+    background: #dff9fb;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
