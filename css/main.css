@@ -70,7 +70,7 @@ h4 {
 
 /* Inputs y botones de formulario */
 .form-input {
-    width: calc(100% - 22px);
+    width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
