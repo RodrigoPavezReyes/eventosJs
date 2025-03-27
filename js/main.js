@@ -22,17 +22,50 @@ function mostrarConsola() {
 const colorMode = document.querySelector("#color-mode");
 const body = document.body
 
+let darkMode = localStorage.getItem("dark-mode")
+
+/** Verificar si el modo oscuro está activado y aplicarlo*/
+if (darkMode === "activado") {
+    body.classList.add("dark-mode");
+    colorMode.innerText = "Cambiar a Light Mode";
+} else {
+    body.classList.remove("dark-mode");
+    colorMode.innerText = "Cambiar a Dark Mode";
+}
+
 colorMode.addEventListener("click", changeMode)
 
+
+
 function changeMode() {
+    
     body.classList.toggle("dark-mode");
     
     if(body.classList.contains("dark-mode")){
         colorMode.innerText = "Cambiar a Light Mode";
+        localStorage.setItem("dark-mode","activado");
     }else{
         colorMode.innerText = "Cambiar a Dark Mode";
+        localStorage.setItem("dark-mode","desactivado")
     }
+
+    
 }
+
+
+
+
+
+
+/**Local Storage de Dark Mode */
+
+
+
+
+
+
+
+
 
 
 /**EVENTOS DE FORM MOSTRAR ALERTA */
@@ -79,3 +112,5 @@ function agregarLista(e) {
     agregarForm.reset();
     agregarInput.focus();
 }
+
+
