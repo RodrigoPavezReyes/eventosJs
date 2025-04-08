@@ -114,7 +114,10 @@ h4 {
 }
 
 #contenido{
-    width: 80%;
+    max-width: 1000px;
     height: 100vh
 }
 
+#titulo{
+    margin-left: 6rem;
+}
